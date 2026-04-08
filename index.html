@@ -21,13 +21,13 @@
   //          Netlify, Vercel, etc.) — both players open same URL
   // ════════════════════════════════════════════════════════
   const firebaseConfig = {
-    apiKey:            "YOUR_API_KEY",
-    authDomain:        "YOUR_PROJECT.firebaseapp.com",
-    databaseURL:       "https://YOUR_PROJECT-default-rtdb.firebaseio.com",
-    projectId:         "YOUR_PROJECT_ID",
-    storageBucket:     "YOUR_PROJECT.appspot.com",
-    messagingSenderId: "YOUR_SENDER_ID",
-    appId:             "YOUR_APP_ID"
+    apiKey:            "AIzaSyCeFqz4gqeFJkZ3jRVMQ_cb4lvCKi7IsY8",
+    authDomain:        "chess-b0fbd.firebaseapp.com",
+    databaseURL:       "https://chess-b0fbd-default-rtdb.firebaseio.com",
+    projectId:         "chess-b0fbd",
+    storageBucket:     "chess-b0fbd.firebasestorage.app",
+    messagingSenderId: "65584507775",
+    appId:             "1:65584507775:web:b0b6ed1577749e3577c84a"
   };
 
   let DB = null;
@@ -36,7 +36,7 @@
 
   function tryInitFirebase() {
     try {
-      if (firebaseConfig.apiKey === "YOUR_API_KEY") return false;
+      if (firebaseConfig.apiKey === "AIzaSyCeFqz4gqeFJkZ3jRVMQ_cb4lvCKi7IsY8") return false;
       const app = initializeApp(firebaseConfig);
       DB = getDatabase(app);
       window._FB = { DB, ref, set, get, onValue, update };
@@ -514,13 +514,13 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
 // 🔥 PASTE YOUR FIREBASE CONFIG HERE
 // ═══════════════════════════════════════════════════</span>
 <span class="key">const</span> firebaseConfig = {
-  <span class="key">apiKey</span>:            <span class="val">"YOUR_API_KEY"</span>,
-  <span class="key">authDomain</span>:        <span class="val">"YOUR_PROJECT.firebaseapp.com"</span>,
-  <span class="key">databaseURL</span>:       <span class="val">"https://YOUR_PROJECT-default-rtdb.firebaseio.com"</span>,
-  <span class="key">projectId</span>:         <span class="val">"YOUR_PROJECT_ID"</span>,
-  <span class="key">storageBucket</span>:     <span class="val">"YOUR_PROJECT.appspot.com"</span>,
-  <span class="key">messagingSenderId</span>: <span class="val">"YOUR_SENDER_ID"</span>,
-  <span class="key">appId</span>:             <span class="val">"YOUR_APP_ID"</span>
+  <span class="key">apiKey</span>:            <span class="val">"AIzaSyCeFqz4gqeFJkZ3jRVMQ_cb4lvCKi7IsY8"</span>,
+  <span class="key">authDomain</span>:        <span class="val">"chess-b0fbd.firebaseapp.com"</span>,
+  <span class="key">databaseURL</span>:       <span class="val">"https://chess-b0fbd-default-rtdb.firebaseio.com"</span>,
+  <span class="key">projectId</span>:         <span class="val">"chess-b0fbd"</span>,
+  <span class="key">storageBucket</span>:     <span class="val">"chess-b0fbd.firebasestorage.app"</span>,
+  <span class="key">messagingSenderId</span>: <span class="val">"65584507775"</span>,
+  <span class="key">appId</span>:             <span class="val">"1:65584507775:web:b0b6ed1577749e3577c84a"</span>
 };</div>
     <div id="fb-status-box" class="fb-status">⚠ Firebase not configured — online play is disabled. Offline & AI modes work fine right now.</div>
   </div>
